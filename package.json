@@ -6,7 +6,7 @@
     "lint": "pnpm dlx turbo run lint",
     "format": "prettier --write \"packages/*/src/**/*.ts\"",
     "extract": "pnpm dlx turbo run extract --filter=!apps-docs",
-    "docs:generate": "pnpm dlx turbo run extract && api-documenter markdown -i temp -o apps/docs/src/content/docs/api && node apps/docs/inject-frontmatter.js",
+    "docs:generate": "pnpm extract && api-documenter markdown -i temp -o apps/docs/src/content/docs/api && node apps/docs/inject-frontmatter.js",
     "docs:build": "pnpm build && pnpm docs:generate && pnpm --filter apps-docs astro build",
     "docs:dev": "pnpm build && pnpm docs:generate && pnpm --filter apps-docs astro dev",
     "test": "pnpm dlx turbo run test",
