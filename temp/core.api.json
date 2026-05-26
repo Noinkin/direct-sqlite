@@ -1,0 +1,2193 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.58.7",
+    "schemaVersion": 1011,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@jsx",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@jsxRuntime",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@jsxFrag",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@jsxImportSource",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@direct-sqlite/core!",
+  "docComment": "",
+  "name": "@direct-sqlite/core",
+  "preserveMemberOrder": false,
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@direct-sqlite/core!",
+      "name": "",
+      "preserveMemberOrder": false,
+      "members": [
+        {
+          "kind": "Class",
+          "canonicalReference": "@direct-sqlite/core!Database:class",
+          "docComment": "/**\n * High-performance, zero-allocation abstraction layer for SQLite instances. Normalizes differences between `better-sqlite3` and `node:sqlite`.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class Database "
+            }
+          ],
+          "fileUrlPath": "src/index.ts",
+          "releaseTag": "Public",
+          "isAbstract": false,
+          "name": "Database",
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@direct-sqlite/core!Database:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `Database` class\n *\n * @param client - An instance of a SQLite client (`node:sqlite` or `better-sqlite3`).\n *\n * @param options - Optional configuration for performance tuning and statement cache size.\n *\n * @param  - options.optimize - Pre-configure the database with specific PRAGMA settings for 'WAL', 'MEMORY', or 'FAST' modes.\n *\n * @param  - options.cacheSize - Maximum number of prepared statements to cache before evicting the least recently used one.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(client: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GenericSqliteClient",
+                  "canonicalReference": "@direct-sqlite/core!~GenericSqliteClient:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", options?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        optimize?: \"WAL\" | \"MEMORY\" | \"FAST\";\n        cacheSize?: number;\n    } | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "client",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!Database#aggregate:member(1)",
+              "docComment": "/**\n * Hooks up custom metric calculations that aggregate state step-by-step across matching rows.\n *\n * @param name - The name of the aggregate function to register.\n *\n * @param options - Aggregate function options to register.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "aggregate(name: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", options: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        start: any;\n        step: (acc: any, next: any) => any;\n        result?: (acc: any) => any;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "name",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "aggregate"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!Database#backup:member(1)",
+              "docComment": "/**\n * Performs a non-blocking copy of the database to target path.\n *\n * @param destinationPath - The file path where the backup should be saved. Should be an absolute path or relative to the current working directory.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "backup(destinationPath: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "destinationPath",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "backup"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!Database#checkpoint:member(1)",
+              "docComment": "/**\n * Flushes tracked log buffers back into primary storage to shrink log file.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "checkpoint(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "checkpoint"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@direct-sqlite/core!Database#client:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly client: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GenericSqliteClient",
+                  "canonicalReference": "@direct-sqlite/core!~GenericSqliteClient:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": true,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "client",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false,
+              "isProtected": false,
+              "isAbstract": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!Database#createTable:member(1)",
+              "docComment": "/**\n * Creates a table based on the provided configuration and returns a TableRunner for that table.\n *\n * @param tableConfig - An object containing the table name, SQL creation statement, and an inference type for the table's rows.\n *\n * @returns A TableRunner instance for the created table.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createTable<T extends "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        $name: string;\n        $createSql: string;\n        $infer: any;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">(tableConfig: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "T"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TableRunner",
+                  "canonicalReference": "@direct-sqlite/core!TableRunner:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T[\"$infer\"]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "tableConfig",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "createTable"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!Database#function:member(1)",
+              "docComment": "/**\n * Binds a custom JavaScript runtime algorithm which is directly executable in SQL queries.\n *\n * @param name - The name of the function to register.\n *\n * @param callback - The function to be called when the SQL function is invoked.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "function(name: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", callback: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(...args: any[]) => any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "name",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "function"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!Database#getStatement:member(1)",
+              "docComment": "/**\n * Resolves statements from cache or registers a fresh pointer with LRU cache eviction defenses active.\n *\n * @param sql - The SQL query string for which to retrieve or create a prepared statement.\n *\n * @returns The prepared statement.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getStatement(sql: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "sql",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "getStatement"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!Database#optimize:member(1)",
+              "docComment": "/**\n * Fine tunes the database engine for high-throughput scenarios.\n *\n * @param mode - The optimization mode to apply. 'WAL' enables Write-Ahead Logging for better concurrency, 'MEMORY' disables journaling and synchronous mode for maximum speed (but no durability), and 'FAST' disables synchronous mode and increases cache size for faster reads/writes at the cost of durability.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "optimize(mode?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'WAL' | 'MEMORY' | 'FAST'"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "mode",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": true
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "optimize"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!Database#table:member(1)",
+              "docComment": "/**\n * Initializes a TableRunner for an existing table in the database, allowing for fluent query building and execution.\n *\n * @param tableConfig - An object containing the table name, SQL creation statement, and an inference type for the table's rows.\n *\n * @returns A TableRunner instance for the specified table.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "table<T extends "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        $name: string;\n        $infer: any;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">(tableConfig: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "T"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TableRunner",
+                  "canonicalReference": "@direct-sqlite/core!TableRunner:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T[\"$infer\"]>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "tableConfig",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "table"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!Database#transaction:member(1)",
+              "docComment": "/**\n * Executes a series of database operations within a transaction. If any operation throws an error, the transaction will be rolled back.\n *\n * @param callback - Function containing the database operations to execute within the transaction.\n *\n * @returns The value returned by the callback function if the transaction commits successfully.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "transaction<T>(callback: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => T"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "T"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "callback",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "transaction"
+            }
+          ],
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@direct-sqlite/core!MutationBuilder:class",
+          "docComment": "/**\n * Isolated mutation pipeline context manager handling table modifications.\n *\n * @remarks\n *\n * The constructor for this class is marked as internal. Third-party code should not call the constructor directly or create subclasses that extend the `MutationBuilder` class.\n *\n * @internal\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class MutationBuilder<TRow> "
+            }
+          ],
+          "fileUrlPath": "src/index.ts",
+          "releaseTag": "Internal",
+          "typeParameters": [
+            {
+              "typeParameterName": "TRow",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "isAbstract": false,
+          "name": "MutationBuilder",
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@direct-sqlite/core!MutationBuilder:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `MutationBuilder` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(db: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Database",
+                  "canonicalReference": "@direct-sqlite/core!Database:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", client: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GenericSqliteClient",
+                  "canonicalReference": "@direct-sqlite/core!~GenericSqliteClient:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", tableName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", action: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'UPDATE' | 'DELETE'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", data?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Partial",
+                  "canonicalReference": "!Partial:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TRow> | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Internal",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "db",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "client",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "tableName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "action",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "data",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 11
+                  },
+                  "isOptional": true
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!MutationBuilder#execute:member(1)",
+              "docComment": "/**\n * Compiles and executes the data mutation transaction statement context across storage layers.\n *\n * @returns An object containing the number of changes made by the UPDATE or DELETE operation and the last inserted or updated row ID. The exact structure of the result may depend on the underlying SQLite client being used.\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "execute(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        changes: any;\n        lastInsertRowid: number;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "execute"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!MutationBuilder#where:member(1)",
+              "docComment": "/**\n * Appends constraints limiting mutation target scopes.\n *\n * @param column - The column name to apply the WHERE condition on. Should be a key of the table's row type.\n *\n * @param operator - The comparison operator to use in the WHERE condition. Should be one of the defined ComparisonOperator types.\n *\n * @param value - The value to compare against. Can be a single value, an array of values (for IN operator), or null (for IS/IS NOT operators).\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "where<K extends "
+                },
+                {
+                  "kind": "Content",
+                  "text": "keyof TRow"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">(column: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "K"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", operator: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ComparisonOperator",
+                  "canonicalReference": "@direct-sqlite/core!~ComparisonOperator:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", value: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "TRow[K] | TRow[K][] | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "K",
+                  "constraintTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 10
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "column",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "operator",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "value",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "where"
+            }
+          ],
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@direct-sqlite/core!SelectQueryBuilder:class",
+          "docComment": "/**\n * Isolated type-safe processing context builder managing reading projections.\n *\n * @remarks\n *\n * The constructor for this class is marked as internal. Third-party code should not call the constructor directly or create subclasses that extend the `SelectQueryBuilder` class.\n *\n * @internal\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class SelectQueryBuilder<TRow, TSelectedKey extends "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof TRow"
+            },
+            {
+              "kind": "Content",
+              "text": " = "
+            },
+            {
+              "kind": "Content",
+              "text": "keyof TRow"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "fileUrlPath": "src/index.ts",
+          "releaseTag": "Internal",
+          "typeParameters": [
+            {
+              "typeParameterName": "TRow",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TSelectedKey",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            }
+          ],
+          "isAbstract": false,
+          "name": "SelectQueryBuilder",
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@direct-sqlite/core!SelectQueryBuilder:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `SelectQueryBuilder` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(db: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Database",
+                  "canonicalReference": "@direct-sqlite/core!Database:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", client: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GenericSqliteClient",
+                  "canonicalReference": "@direct-sqlite/core!~GenericSqliteClient:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", tableName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", selectedColumns: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "TSelectedKey[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Internal",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "db",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "client",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "tableName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "selectedColumns",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!SelectQueryBuilder#all:member(1)",
+              "docComment": "/**\n * Resolves all matching entries into a compiled array list.\n *\n * @returns An array of objects representing the rows returned by the executed SELECT query.\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "all(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Pick",
+                  "canonicalReference": "!Pick:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TRow, TSelectedKey>[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "all"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!SelectQueryBuilder#each:member(1)",
+              "docComment": "/**\n * Streams structural entries row-by-row out of memory to guarantee low garbage collection footprints allowing for iteration, if supported by the SQLite client.\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "each(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IterableIterator",
+                  "canonicalReference": "!IterableIterator:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Pick",
+                  "canonicalReference": "!Pick:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TRow, TSelectedKey>>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "each"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!SelectQueryBuilder#explain:member(1)",
+              "docComment": "/**\n * Inspects virtual machine planning layers showing indexing behaviors.\n *\n * @returns An array of objects representing the execution plan for the current query.\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "explain(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        id: number;\n        parent: number;\n        notused: number;\n        detail: string;\n    }[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "explain"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!SelectQueryBuilder#get:member(1)",
+              "docComment": "/**\n * Pulls the primary single entry record matching the structured query layout.\n *\n * @returns An object representing a single row returned by the executed SELECT query, with properties corresponding to the selected columns.\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Pick",
+                  "canonicalReference": "!Pick:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TRow, TSelectedKey> | undefined"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "get"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!SelectQueryBuilder#limit:member(1)",
+              "docComment": "/**\n * Sets an upper bound constraint on returned rows.\n *\n * @param value - The maximum number of rows to return from the query. Should be a non-negative integer.\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "limit(value: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "value",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "limit"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!SelectQueryBuilder#offset:member(1)",
+              "docComment": "/**\n * Configures a skip index boundary offset for row selections.\n *\n * @param value - The number of rows to skip before starting to return results from the query. Should be a non-negative integer.\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "offset(value: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "value",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "offset"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!SelectQueryBuilder#orderBy:member(1)",
+              "docComment": "/**\n * Restructures response sequences based on designated column indices.\n *\n * @param column - The column name to order the results by. Should be a key of the table's row type.\n *\n * @param direction - The direction to order the results, either 'ASC' for ascending or 'DESC' for descending. Defaults to 'ASC' if not specified.\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "orderBy(column: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "keyof TRow"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", direction?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'ASC' | 'DESC'"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "column",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "direction",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "orderBy"
+            }
+          ],
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@direct-sqlite/core!TableRunner:class",
+          "docComment": "/**\n * Core table execution driver managing distinct query builder pipelines.\n *\n * @remarks\n *\n * The constructor for this class is marked as internal. Third-party code should not call the constructor directly or create subclasses that extend the `TableRunner` class.\n *\n * @internal\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class TableRunner<TRow> "
+            }
+          ],
+          "fileUrlPath": "src/index.ts",
+          "releaseTag": "Internal",
+          "typeParameters": [
+            {
+              "typeParameterName": "TRow",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "isAbstract": false,
+          "name": "TableRunner",
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@direct-sqlite/core!TableRunner:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `TableRunner` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(db: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Database",
+                  "canonicalReference": "@direct-sqlite/core!Database:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", client: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GenericSqliteClient",
+                  "canonicalReference": "@direct-sqlite/core!~GenericSqliteClient:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", tableName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Internal",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "db",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "client",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "tableName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!TableRunner#delete:member(1)",
+              "docComment": "/**\n * Spawns a query builder to wipe matching elements from storage.\n *\n * @returns A MutationBuilder instance for building and executing the DELETE query.\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "delete(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "MutationBuilder",
+                  "canonicalReference": "@direct-sqlite/core!MutationBuilder:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TRow>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "delete"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!TableRunner#insert:member(1)",
+              "docComment": "/**\n * Runs an atomic single-record write payload tracking metadata state alterations.\n *\n * @param data - An object containing the columns and their values to be inserted.\n *\n * @returns The result of the insert operation, which typically includes the number of changes made and the last inserted row ID. The exact structure of the result may depend on the underlying SQLite client being used.\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "insert(data: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Partial",
+                  "canonicalReference": "!Partial:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TRow>"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        changes: any;\n        lastInsertRowId: number;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "data",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "insert"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!TableRunner#insertMany:member(1)",
+              "docComment": "/**\n * Packages arrays of similar records into a single multi-row insertion statement to minimize execution context switches.\n *\n * @param records - An array of objects, each containing the columns and their values to be inserted for a single row.\n *\n * @returns The result of the insert operation, which typically includes the number of changes made and the last inserted row ID. The exact structure of the result may depend on the underlying SQLite client being used.\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "insertMany(records: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Partial",
+                  "canonicalReference": "!Partial:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TRow>[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        changes: number;\n        lastInsertRowid: number;\n        lastInsertRowId?: undefined;\n    } | {\n        changes: any;\n        lastInsertRowId: number;\n        lastInsertRowid?: undefined;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "records",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "insertMany"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!TableRunner#prepare:member(1)",
+              "docComment": "/**\n * Pre-compiles execution statement structures bypassing standard lookup evaluations during fast loops.\n *\n * @param action - The type of query to prepare, either 'SELECT' or 'DELETE'.\n *\n * @param column - The column name to apply the WHERE condition on. Should be a key of the table's row type.\n *\n * @param operator - The comparison operator to use in the WHERE condition. Should be one of the defined ComparisonOperator types.\n *\n * @returns Either a SelectQueryBuilder instance for building and executing the SELECT query or a MutationBuilder instance for building and executing the DELETE query, depending on the specified action parameter.\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "prepare<K extends "
+                },
+                {
+                  "kind": "Content",
+                  "text": "keyof TRow"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">(action: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'SELECT' | 'DELETE'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", column: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "K"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", operator: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ComparisonOperator",
+                  "canonicalReference": "@direct-sqlite/core!~ComparisonOperator:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        all: (...params: TRow[K][]) => TRow[];\n        get: (...params: TRow[K][]) => TRow | undefined;\n        run: (...params: TRow[K][]) => any;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "K",
+                  "constraintTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 10
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "action",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "column",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "operator",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "prepare"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!TableRunner#select:member(1)",
+              "docComment": "/**\n * Generates a targeted selection pipeline targeting specified key components. Defaults to `SELECT *`.\n *\n * @param columns - An optional list of column names to select. If omitted, all columns will be selected.\n *\n * @returns A SelectQueryBuilder instance for building and executing the SELECT query.\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "select<K extends "
+                },
+                {
+                  "kind": "Content",
+                  "text": "keyof TRow"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">(...columns: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "K[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SelectQueryBuilder",
+                  "canonicalReference": "@direct-sqlite/core!SelectQueryBuilder:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TRow, K>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "K",
+                  "constraintTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "columns",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "select"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!TableRunner#update:member(1)",
+              "docComment": "/**\n * Spawns a query builder to update properties inside matching row footprints.\n *\n * @param data - An object containing the columns and their new values to be updated.\n *\n * @returns A MutationBuilder instance for building and executing the UPDATE query.\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "update(data: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Partial",
+                  "canonicalReference": "!Partial:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TRow>"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "MutationBuilder",
+                  "canonicalReference": "@direct-sqlite/core!MutationBuilder:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TRow>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 4,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "data",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "update"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!TableRunner#upsert:member(1)",
+              "docComment": "/**\n * Executes write assertions, running cell overrides if targeted index boundaries trigger collision states.\n *\n * @param data - An object containing the columns and their values to be inserted or updated.\n *\n * @param conflictTarget - The column name that should be used as the conflict target for the UPSERT operation.\n *\n * @param updateFields - An array of column names that should be updated with the new values from the data object if a conflict occurs.\n *\n * @returns The result of the upsert operation, which typically includes the number of changes made and the last inserted or updated row ID. The exact structure of the result may depend on the underlying SQLite client being used.\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "upsert(data: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Partial",
+                  "canonicalReference": "!Partial:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TRow>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", conflictTarget: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "keyof TRow"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", updateFields: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(keyof TRow)[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        changes: any;\n        lastInsertRowId: number;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 8,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "data",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "conflictTarget",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "updateFields",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 6,
+                    "endIndex": 7
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "upsert"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@direct-sqlite/core!TableRunner#where:member(1)",
+              "docComment": "/**\n * Shorthand helper to quickly initialize a full row read operation matching a specific filter criteria.\n *\n * @param column - The column name to apply the WHERE condition on. Should be a key of the table's row type.\n *\n * @param operator - The comparison operator to use in the WHERE condition. Should be one of the defined ComparisonOperator types.\n *\n * @param value - The value to compare against. Can be a single value, an array of values, or null.\n *\n * @returns A SelectQueryBuilder instance for building and executing the SELECT query.\n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "where<K extends "
+                },
+                {
+                  "kind": "Content",
+                  "text": "keyof TRow"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">(column: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "K"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", operator: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ComparisonOperator",
+                  "canonicalReference": "@direct-sqlite/core!~ComparisonOperator:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", value: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "TRow[K] | TRow[K][] | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SelectQueryBuilder",
+                  "canonicalReference": "@direct-sqlite/core!SelectQueryBuilder:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<TRow, keyof TRow>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "K",
+                  "constraintTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 11
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "column",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "operator",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "value",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "isAbstract": false,
+              "name": "where"
+            }
+          ],
+          "implementsTokenRanges": []
+        }
+      ]
+    }
+  ]
+}

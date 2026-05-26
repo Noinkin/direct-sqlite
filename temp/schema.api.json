@@ -1,0 +1,1036 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.58.7",
+    "schemaVersion": 1011,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@jsx",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@jsxRuntime",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@jsxFrag",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@jsxImportSource",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "@direct-sqlite/schema!",
+  "docComment": "",
+  "name": "@direct-sqlite/schema",
+  "preserveMemberOrder": false,
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@direct-sqlite/schema!",
+      "name": "",
+      "preserveMemberOrder": false,
+      "members": [
+        {
+          "kind": "Function",
+          "canonicalReference": "@direct-sqlite/schema!blob:function(1)",
+          "docComment": "/**\n * Represents a blob type in a table\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "blob: () => "
+            },
+            {
+              "kind": "Reference",
+              "text": "ColumnBuilder",
+              "canonicalReference": "@direct-sqlite/schema!ColumnBuilder:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<\"BLOB\", "
+            },
+            {
+              "kind": "Reference",
+              "text": "Buffer",
+              "canonicalReference": "!\"\\\"node:buffer\\\"\".__global.Buffer:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ArrayBufferLike",
+              "canonicalReference": "!ArrayBufferLike:type"
+            },
+            {
+              "kind": "Content",
+              "text": ">, true>"
+            }
+          ],
+          "fileUrlPath": "src/index.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "name": "blob"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@direct-sqlite/schema!boolean:function(1)",
+          "docComment": "/**\n * Represents a boolean(0 or 1) type in a table\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "boolean: () => "
+            },
+            {
+              "kind": "Reference",
+              "text": "ColumnBuilder",
+              "canonicalReference": "@direct-sqlite/schema!ColumnBuilder:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<\"INTEGER\", 0 | 1, true>"
+            }
+          ],
+          "fileUrlPath": "src/index.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "name": "boolean"
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@direct-sqlite/schema!ColumnBuilder:interface",
+          "docComment": "/**\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ColumnBuilder<T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ColumnType",
+              "canonicalReference": "@direct-sqlite/schema!ColumnType:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", TRuntimeType, TNullable extends "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": " = "
+            },
+            {
+              "kind": "Content",
+              "text": "true"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "fileUrlPath": "src/index.ts",
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TRuntimeType",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TNullable",
+              "constraintTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            }
+          ],
+          "name": "ColumnBuilder",
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@direct-sqlite/schema!ColumnBuilder#autoIncrement:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "autoIncrement(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ColumnBuilder",
+                  "canonicalReference": "@direct-sqlite/schema!ColumnBuilder:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T, TRuntimeType, TNullable>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "autoIncrement"
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@direct-sqlite/schema!ColumnBuilder#isAutoIncrement:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isAutoIncrement: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "isAutoIncrement",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@direct-sqlite/schema!ColumnBuilder#isNullable:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isNullable: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "TNullable"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "isNullable",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@direct-sqlite/schema!ColumnBuilder#isPrimaryKey:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isPrimaryKey: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "isPrimaryKey",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@direct-sqlite/schema!ColumnBuilder#notNull:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "notNull(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ColumnBuilder",
+                  "canonicalReference": "@direct-sqlite/schema!ColumnBuilder:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T, TRuntimeType, false>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "notNull"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@direct-sqlite/schema!ColumnBuilder#primaryKey:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "primaryKey(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ColumnBuilder",
+                  "canonicalReference": "@direct-sqlite/schema!ColumnBuilder:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<T, TRuntimeType, TNullable>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "primaryKey"
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@direct-sqlite/schema!ColumnBuilder#type:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "T"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "type",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@direct-sqlite/schema!ColumnType:type",
+          "docComment": "/**\n * Core primitive SQL types\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export type ColumnType = "
+            },
+            {
+              "kind": "Content",
+              "text": "'TEXT' | 'INTEGER' | 'REAL' | 'BLOB'"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/index.ts",
+          "releaseTag": "Public",
+          "name": "ColumnType",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@direct-sqlite/schema!createColumn:function(1)",
+          "docComment": "/**\n * Creates a table column\n *\n * @param type - Column Type\n *\n * @returns Column\n *\n * @internal\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function createColumn<T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ColumnType",
+              "canonicalReference": "@direct-sqlite/schema!ColumnType:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", TRuntimeType>(type: "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "ColumnBuilder",
+              "canonicalReference": "@direct-sqlite/schema!ColumnBuilder:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T, TRuntimeType, true>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/index.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 7
+          },
+          "releaseTag": "Internal",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "type",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TRuntimeType",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "createColumn"
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@direct-sqlite/schema!InferColumn:type",
+          "docComment": "/**\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export type InferColumn<T> = "
+            },
+            {
+              "kind": "Content",
+              "text": "T extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ColumnBuilder",
+              "canonicalReference": "@direct-sqlite/schema!ColumnBuilder:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<any, infer TRuntimeType, infer Nullable> ? TRuntimeType | (Nullable extends true ? null : never) : never"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/index.ts",
+          "releaseTag": "Public",
+          "name": "InferColumn",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@direct-sqlite/schema!InferSchema:type",
+          "docComment": "/**\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export type InferSchema<T> = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    [K in keyof T]: "
+            },
+            {
+              "kind": "Reference",
+              "text": "InferColumn",
+              "canonicalReference": "@direct-sqlite/schema!InferColumn:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T[K]>;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/index.ts",
+          "releaseTag": "Public",
+          "name": "InferSchema",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@direct-sqlite/schema!integer:function(1)",
+          "docComment": "/**\n * Represents an integer type in a table\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "integer: () => "
+            },
+            {
+              "kind": "Reference",
+              "text": "ColumnBuilder",
+              "canonicalReference": "@direct-sqlite/schema!ColumnBuilder:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<\"INTEGER\", number, true>"
+            }
+          ],
+          "fileUrlPath": "src/index.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "name": "integer"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@direct-sqlite/schema!json:function(1)",
+          "docComment": "/**\n * Represents a json(text) type in a table\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "json: <TStructure extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, any>"
+            },
+            {
+              "kind": "Content",
+              "text": ">() => "
+            },
+            {
+              "kind": "Reference",
+              "text": "ColumnBuilder",
+              "canonicalReference": "@direct-sqlite/schema!ColumnBuilder:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<\"TEXT\", TStructure, true>"
+            }
+          ],
+          "fileUrlPath": "src/index.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 4,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "typeParameters": [
+            {
+              "typeParameterName": "TStructure",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "json"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@direct-sqlite/schema!real:function(1)",
+          "docComment": "/**\n * Represents a real type in a table\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "real: () => "
+            },
+            {
+              "kind": "Reference",
+              "text": "ColumnBuilder",
+              "canonicalReference": "@direct-sqlite/schema!ColumnBuilder:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<\"REAL\", number, true>"
+            }
+          ],
+          "fileUrlPath": "src/index.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "name": "real"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@direct-sqlite/schema!table:function(1)",
+          "docComment": "/**\n * Creates a table schema\n *\n * @param name - Table Name\n *\n * @param columns - Table Columns\n *\n * @returns Table\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function table<TDefs extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, "
+            },
+            {
+              "kind": "Reference",
+              "text": "ColumnBuilder",
+              "canonicalReference": "@direct-sqlite/schema!ColumnBuilder:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<any, any, any>>"
+            },
+            {
+              "kind": "Content",
+              "text": ">(name: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", columns: "
+            },
+            {
+              "kind": "Content",
+              "text": "TDefs"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    $name: string;\n    $columns: TDefs;\n    $createSql: string;\n    $infer: "
+            },
+            {
+              "kind": "Reference",
+              "text": "InferSchema",
+              "canonicalReference": "@direct-sqlite/schema!InferSchema:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<TDefs>;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/index.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 10,
+            "endIndex": 13
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "name",
+              "parameterTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "columns",
+              "parameterTypeTokenRange": {
+                "startIndex": 8,
+                "endIndex": 9
+              },
+              "isOptional": false
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "TDefs",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "table"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@direct-sqlite/schema!text:function(1)",
+          "docComment": "/**\n * Represents a text type in a table\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "text: () => "
+            },
+            {
+              "kind": "Reference",
+              "text": "ColumnBuilder",
+              "canonicalReference": "@direct-sqlite/schema!ColumnBuilder:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<\"TEXT\", string, true>"
+            }
+          ],
+          "fileUrlPath": "src/index.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "name": "text"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@direct-sqlite/schema!timestamp:function(1)",
+          "docComment": "/**\n * Represents a timestamp(text) type in a table\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "timestamp: () => "
+            },
+            {
+              "kind": "Reference",
+              "text": "ColumnBuilder",
+              "canonicalReference": "@direct-sqlite/schema!ColumnBuilder:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<\"TEXT\", string, true>"
+            }
+          ],
+          "fileUrlPath": "src/index.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "name": "timestamp"
+        }
+      ]
+    }
+  ]
+}
