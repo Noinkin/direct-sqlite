@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { DatabaseSync } from 'node:sqlite';
 import { Database } from './index.js';
-import { table, text, integer, real, blob, boolean } from '@name/schema';
+import { table, text, integer, real, blob, boolean } from '@direct-sqlite/schema';
 
 // 1. Definition Setup for the main test tracking structures
 const inventoryTable = table('inventory', {
