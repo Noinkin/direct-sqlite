@@ -1,0 +1,88 @@
+[
+  {
+    "label": "CORE",
+    "items": [
+      {
+        "label": "Core Package",
+        "slug": "api/core"
+      },
+      {
+        "label": "Database",
+        "slug": "api/core/database"
+      },
+      {
+        "label": "MutationBuilder",
+        "slug": "api/core/mutationbuilder"
+      },
+      {
+        "label": "SelectQueryBuilder",
+        "slug": "api/core/selectquerybuilder"
+      },
+      {
+        "label": "TableRunner",
+        "slug": "api/core/tablerunner"
+      }
+    ]
+  },
+  {
+    "label": "SCHEMA",
+    "items": [
+      {
+        "label": "Schema Package",
+        "slug": "api/schema"
+      },
+      {
+        "label": "blob() function",
+        "slug": "api/schema/blob"
+      },
+      {
+        "label": "boolean() function",
+        "slug": "api/schema/boolean"
+      },
+      {
+        "label": "ColumnBuilder",
+        "slug": "api/schema/columnbuilder"
+      },
+      {
+        "label": "ColumnType type",
+        "slug": "api/schema/columntype"
+      },
+      {
+        "label": "createColumn() function",
+        "slug": "api/schema/createcolumn"
+      },
+      {
+        "label": "InferColumn type",
+        "slug": "api/schema/infercolumn"
+      },
+      {
+        "label": "InferSchema type",
+        "slug": "api/schema/inferschema"
+      },
+      {
+        "label": "integer() function",
+        "slug": "api/schema/integer"
+      },
+      {
+        "label": "json() function",
+        "slug": "api/schema/json"
+      },
+      {
+        "label": "real() function",
+        "slug": "api/schema/real"
+      },
+      {
+        "label": "table() function",
+        "slug": "api/schema/table"
+      },
+      {
+        "label": "text() function",
+        "slug": "api/schema/text"
+      },
+      {
+        "label": "timestamp() function",
+        "slug": "api/schema/timestamp"
+      }
+    ]
+  }
+]

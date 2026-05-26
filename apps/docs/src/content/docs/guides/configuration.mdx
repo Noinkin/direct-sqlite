@@ -1,0 +1,52 @@
+---
+title: Database Configuration
+description: Fine-tune runtime connections, memory architectures, and operational configurations.
+---
+
+import { Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+
+When initializing your `@direct-sqlite/core` `Database` instance, you can pass a configuration object alongside your native schema map to adjust operational runtime execution behavior.
+
+
+<Tabs>
+    <TabItem label="better-sqlite3">
+        ```typescript
+        import { Database } from '@direct-sqlite/core';
+        import SQLite from 'better-sqlite3';
+
+        const connection = new SQLite('app.db');
+
+        export const db = new Database(connection, {
+            optimize: "WAL",
+            cacheSize: 1000
+        });
+        ```
+    </TabItem>
+    <TabItem label="node:sqlite">
+        ```typescript
+        import { Database } from '@direct-sqlite/core';
+        import { DatabaseSync } from 'node:sqlite';
+
+        const connection = new DatabaseSync('app.db');
+
+        export const db = new Database(connection, {
+            optimize: "WAL",
+            cacheSize: 1000
+        });
+        ```
+    </TabItem>
+</Tabs>
+
+## Options Matrix
+
+| Option Name | Types | Default | Description |
+| :--- | :--- | :--- | :--- |
+| `optimize` | `"WAL" \| "MEMORY" \| "FAST"` | `undefined` | The optimization method for the database. Write Ahead Logging is recommended. |
+| `cacheSize` | `number` | `undefined` | The amount of queries to cache before they get overwritten. |
+### Recommended PRAGMA Optimizations
+
+For high-concurrency systems, using **Write-Ahead Logging (WAL)** mode drastically optimizes parallel read workloads without blocking writer transactions:
+
+```typescript
+optimize: "WAL"
+```

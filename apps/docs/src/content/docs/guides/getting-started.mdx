@@ -1,0 +1,104 @@
+---
+title: Getting Started
+description: Learn how to install and configure Direct SQLite in your runtime environment.
+---
+
+import { Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+
+`direct-sqlite` is a high-performance, type-safe SQLite database binding layer optimized for modern JavaScript runtimes. It eliminates heavy intermediate ORM parsing layers to execute queries with near-zero runtime abstraction overhead.
+
+## Installation
+
+Install the package alongside your preferred workspace database driver dependencies.
+
+<Tabs>
+  <TabItem label="pnpm">
+    ```bash
+    pnpm add direct-sqlite
+    ```
+  </TabItem>
+  <TabItem label="npm">
+    ```bash
+    npm install direct-sqlite
+    ```
+  </TabItem>
+  <TabItem label="yarn">
+    ```bash
+    yarn add direct-sqlite
+    ```
+  </TabItem>
+</Tabs>
+
+## Quick Start Guide
+
+Follow these steps to instantiate your database instance and run your first compile-time validated query.
+
+<Steps>
+
+1. **Define Your Schema Struct**
+   
+   Create your tables using the structural column schema builders:
+
+   ```typescript
+   // src/db/schema.ts
+   import { table, text, integer } from '@direct-sqlite/schema';
+
+   export const users = table('users', {
+     id: integer('id').primaryKey(),
+     name: text('name').notNull(),
+     email: text('email').unique(),
+   })
+   ```
+
+2. **Initialize the Core Driver Interface**
+   
+   Pass your native runtime SQLite database handle directly into the core wrapper instance:
+
+   <Tabs>
+        <TabItem label="better-sqlite3">
+            ```typescript
+            // src/db/index.ts
+            import { Database } from '@direct-sqlite/core';
+            import SQLite from 'better-sqlite3';
+            import * as schema from './schema';
+
+            const nativeDb = new SQLite('local.db');
+            
+            // Instantiate the core direct binding agent
+            export const db = new Database(nativeDb, { schema });
+            ```
+        </TabItem>
+        <TabItem label="node:sqlite">
+            ```typescript
+            // src/db/index.ts
+            import { Database } from '@direct-sqlite/core';
+            import { DatabaseSync } from 'node:sqlite';
+            import * as schema from './schema';
+
+            const nativeDb = new DatabaseSync('local.db');
+            
+            // Instantiate the core direct binding agent
+            export const db = new Database(nativeDb, { schema });
+            ```
+        </TabItem>
+   </Tabs>
+
+3. **Execute Type-Safe Queries**
+   
+   Import your database instance context layer directly to leverage auto-complete and full mutation pipelines:
+
+   ```typescript
+   import { db } from './db';
+   import { users } from './db/schema';
+
+   // Fully type-safe result dataset arrays matching your table schema
+   const activeUsers = await db.select().from(users).execute();
+   console.log(activeUsers);
+   ```
+
+</Steps>
+
+## Next Architecture Steps
+
+* **[Database Configuration](/direct-sqlite/guides/configuration/)** — Configure pooling limits, connection flags, and cache sizing.
+* **[Query & Mutation Builders](/direct-sqlite/guides/queries-and-mutations/)** — Leverage the underlying fluent API mechanics for conditional filtering clauses.
