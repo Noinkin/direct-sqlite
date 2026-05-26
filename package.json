@@ -1,0 +1,26 @@
+{
+  "name": "direct-sqlite",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"packages/*/src/**/*.ts\"",
+    "extract": "turbo run extract",
+    "docs": "api-documenter markdown -i temp -o docs",
+    "generate-docs": "pnpm build && pnpm extract && pnpm run docs",
+    "test": "turbo run test",
+    "test:watch": "vitest"
+  },
+  "license": "ISC",
+  "packageManager": "pnpm@10.27.0",
+  "devDependencies": {
+    "@microsoft/api-documenter": "^7.30.5",
+    "@microsoft/api-extractor": "^7.58.7",
+    "@types/node": "^25.9.1",
+    "eslint": "^10.4.0",
+    "prettier": "^3.8.3",
+    "turbo": "^2.9.14",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.7"
+  }
+}

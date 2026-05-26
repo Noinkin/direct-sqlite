@@ -1,0 +1,23 @@
+{
+  "name": "@direct-sqlite/schema",
+  "description": "High-performance, schema creation for SQLite instances.  Normalizes differences between `better-sqlite3` and `node:sqlite`",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src/**/*.ts",
+    "extract": "api-extractor run --local",
+    "test": "vitest run"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
