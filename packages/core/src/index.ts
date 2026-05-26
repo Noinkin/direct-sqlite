@@ -2,7 +2,7 @@ import { type GenericSqliteClient, type ComparisonOperator } from "./types.js";
 
 /**
  * High-performance, zero-allocation abstraction layer for SQLite instances.
- * Normalizes differences between `better-sqlite3` and `node:sqlite`.
+ * Normalizes differences between `better-sqlite3`, `node:sqlite` and 'bun:sqlite`.
  * @public
  */
 export class Database {
@@ -10,7 +10,7 @@ export class Database {
     private readonly maxCacheSize: number = 1000;
 
     /**
-     * @param client - An instance of a SQLite client (`node:sqlite` or `better-sqlite3`).
+     * @param client - An instance of a SQLite client (`better-sqlite3`, `node:sqlite` or 'bun:sqlite`).
      * @param options - Optional configuration for performance tuning and statement cache size.
      * @param options.optimize - Pre-configure the database with specific PRAGMA settings for 'WAL', 'MEMORY', or 'FAST' modes.
      * @param options.cacheSize - Maximum number of prepared statements to cache before evicting the least recently used one.

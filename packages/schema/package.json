@@ -1,6 +1,6 @@
 {
   "name": "@direct-sqlite/schema",
-  "description": "High-performance, schema creation for SQLite instances.  Normalizes differences between `better-sqlite3` and `node:sqlite`",
+  "description": "High-performance, schema creation for SQLite instances.  Normalizes differences between `better-sqlite3`, `node:sqlite` and `bun:sqlite`.",
   "version": "1.0.0",
   "type": "module",
   "main": "./dist/index.js",

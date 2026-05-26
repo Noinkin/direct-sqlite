@@ -1,6 +1,6 @@
 /**
  * A minimal structural interface that matches both 
- * better-sqlite3 and node:sqlite (DatabaseSync) engines.
+ * better-sqlite3, bun:sqlite and node:sqlite (DatabaseSync) engines.
  * @public
  */
 export interface GenericSqliteClient {

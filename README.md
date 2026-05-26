@@ -8,7 +8,7 @@ High-performance, type-safe SQLite database operations for modern architectures.
 
 - 🚀 **Zero Overhead:** Direct bindings to native SQLite drivers without unnecessary serialization/deserialization.
 - 🛡️ **Compile-Time Safe:** Full schema-driven type inference for builders and results.
-- 🛠️ **Runtime Agnostic:** Works seamlessly with `better-sqlite3`, `node:sqlite`, and other native handlers.
+- 🛠️ **Runtime Agnostic:** Works seamlessly with `better-sqlite3`, `node:sqlite`, `bun:sqlite`, and other native handlers.
 - 🏗️ **Fluent API:** Intuitive, chainable builders for complex queries and mutations.
 
 ## Installation

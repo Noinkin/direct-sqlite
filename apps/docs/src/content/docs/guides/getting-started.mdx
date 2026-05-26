@@ -81,6 +81,19 @@ Follow these steps to instantiate your database instance and run your first comp
             export const db = new Database(nativeDb, { schema });
             ```
         </TabItem>
+        <TabItem label="bun:sqlite">
+            ```typescript
+            // src/db/index.ts
+            import { Database } from '@direct-sqlite/core';
+            import SQLite from 'bun:sqlite';
+            import * as schema from './schema';
+
+            const nativeDb = new SQLite('local.db');
+            
+            // Instantiate the core direct binding agent
+            export const db = new Database(nativeDb, { schema });
+            ```
+        </TabItem>
    </Tabs>
 
 3. **Execute Type-Safe Queries**

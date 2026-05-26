@@ -35,6 +35,19 @@ When initializing your `@direct-sqlite/core` `Database` instance, you can pass a
         });
         ```
     </TabItem>
+    <TabItem label="better-sqlite3">
+        ```typescript
+        import { Database } from '@direct-sqlite/core';
+        import SQLite from 'bun:sqlite';
+
+        const connection = new SQLite('app.db');
+
+        export const db = new Database(connection, {
+            optimize: "WAL",
+            cacheSize: 1000
+        });
+        ```
+    </TabItem>
 </Tabs>
 
 ## Options Matrix
